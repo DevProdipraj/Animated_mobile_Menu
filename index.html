@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- Navbar  -->
+    <header class=" h-screen w-screen bg-[url(./asset/image/bg_img.jpg)] bg-cover bg-center relative">
+        <nav class="px-16 flex item-center justify-between pt-4">
+            <div class="text-2xl text-white">Navbar</div>
+            <div class="icon" id="menu">
+                <i class="ri-menu-3-line text-3xl text-white cursor-pointer"></i>
+            </div>
+        </nav>
+        <div id="mobileMenu" class="h-screen w-[30%] bg-white/30 absolute right-[-30%] top-0 backdrop-blur-lg ">
+            <ul class="ms-12 mt-16 menu_list">
+                <li class="text-4xl py-2 font-serif ">Home</li>
+                <li class="text-4xl py-2 font-serif ">Contact</li>
+                <li class="text-4xl py-2 font-serif ">Blog</li>
+                <li class="text-4xl py-2 font-serif ">About</li>
+                <li class="text-4xl py-2 font-serif ">Contact</li>
+            </ul>
+            <div id="closeIcon" class="absolute top-5 right-10 close_icons">
+                <i class="ri-close-line text-2xl bg-white rounded-full p-1 cursor-pointer "></i>
+            </div>
+        </div>
+        
+        
+    </header>
+
+     
+
+    <!-- js files  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./asset/js/script.js"></script>
+</body>
+
+</html>
